@@ -51,7 +51,7 @@ def run(net, x, y, alpha, discount_factor, ex, ey, row, column,episode):
         notEnd = True
         while notEnd:
             vi.updates([[x,y]])
-            time.sleep(0.02)
+            time.sleep(0.04)
             reward = -1
             # strategy,get the direction
             direction = pi(net, x, y, row, column)

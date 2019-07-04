@@ -13,6 +13,9 @@ class GAME:
         pygame.display.update()
 
     def run(self):
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
         self.screen.fill((0, 0, 0))
         for i in range(self.row):
             pygame.draw.line(self.screen, (255, 255, 255), [
