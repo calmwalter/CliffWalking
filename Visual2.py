@@ -36,5 +36,6 @@ class GAME:
         self.route = route
         self.run()
 
-#newGame = GAME(10, 20)
-# newGame.run()
+if __name__ == "__main__":
+    newGame = GAME(10, 20,[[0,0]])
+    newGame.run()
